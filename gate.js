@@ -16,13 +16,13 @@
       id: 'v1',
       path: 'v1/',
       title: 'Versão 1 — E03 Lousa do dia',
-      blurb: "E03 · Lousa do dia — cartaz tipográfico com tira de fotos, cardápio em lousa de giz logo após o hero, tíquetes de pedido, comanda de retirada/entrega e placa de rua. Refs: Cucina Pizza, Ouê Sushi, Famiglia Mancini."
+      blurb: "Cartaz tipográfico de letras grandes, com os cultos em destaque."
     },
     {
       id: 'v2',
       path: 'v2/',
       title: 'Versão 2 — E07 Jornal de bairro',
-      blurb: "E07 · Jornal de bairro — cabeçalho-manchete com seções do jornal, manchete com foto legendada e coluna lateral, matéria em colunas com capitular, notas em 4 colunas, cardápio em classificados, expediente. Refs: Fasano, Terraço Itália, Famiglia Mancini."
+      blurb: "Página em estilo de jornal: manchete com fotografia, colunas e notas da comunidade."
     }
   ];
 
