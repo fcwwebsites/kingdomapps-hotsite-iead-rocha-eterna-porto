@@ -1,0 +1,109 @@
+/* E03 — Lousa do dia. Mecânica comum em core.css. Monocromático + 1 acento: --brand (acento), --brand-ink (preto), --brand2 (papel). */
+:root{--bg:var(--brand2,#f3ede2);--ink:var(--brand-ink);--muted:#5d5852;--surface:#fff;--line:rgba(21,21,21,.15);--accent:var(--brand);--accent-ink:#fff;
+  --font-display:'Anton',Impact,'Arial Narrow',sans-serif;--font-body:'Work Sans',system-ui,sans-serif;--display-weight:400;
+  --wa-bg:#1f8a4c;--wa-ink:#fff;--wa-hover:#18703d;--btn-radius:4px;--btn-case:uppercase;--btn-track:.04em;
+  --header-bg:var(--brand-ink);--header-ink:#fff;--nav-mobile-bg:var(--brand-ink);--chalk:#f4f1ea;--board:#22302a;--wood:#7a5634}
+h1,h2{text-transform:uppercase;letter-spacing:.01em}
+.e3-kicker{font:700 .78rem/1 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:var(--brand);margin:0 0 .9em}
+.e3-header .brand-logo{background:#000;border:2px solid #fff}
+.e3-header .site-nav a{color:#fff;font-weight:600;text-transform:uppercase;font-size:.8rem;letter-spacing:.08em}
+@media (max-width:880px){.e3-header .site-nav{color:#fff}.e3-header .site-nav a{border-color:rgba(255,255,255,.15)}}
+/* cartaz + tira de fotos */
+.e3-hero{background:var(--brand-ink);color:#fff;padding:56px 0 0;position:relative}
+.e3-eyebrow{font-weight:700;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brand)}
+.e3-hero h1{font-size:clamp(3rem,11vw,9.5rem);line-height:.9;margin:.1em 0 .35em;max-width:12ch}
+.e3-poster-foot{display:grid;gap:22px;align-items:end}
+@media (min-width:900px){.e3-poster-foot{grid-template-columns:1.2fr 1fr;gap:56px}}
+.e3-lead{font-size:1.1rem;color:rgba(255,255,255,.82);margin:0}
+.e3-poster .hero-ctas{margin:0}
+.e3-hero .btn-ghost{color:#fff}
+.e3-chips{list-style:none;display:flex;flex-wrap:wrap;gap:0;margin:28px 0 0;border-top:2px solid var(--brand)}
+.e3-chips li{font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;padding:12px 18px 12px 0}
+.e3-chips li+li::before{content:"✕";color:var(--brand);margin-right:18px;font-size:.7rem}
+.e3-strip{position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(200px,1fr);gap:16px;margin-top:40px;transform:translateY(60px);overflow-x:auto;padding-bottom:6px}
+.e3-ticket{margin:0;background:#fff;padding:10px 10px 30px;box-shadow:0 18px 40px rgba(0,0,0,.35);transform:rotate(-1.5deg)}
+.e3-ticket:nth-child(even){transform:rotate(1.5deg)}
+.e3-ticket img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.e3-sticker{position:absolute;right:20px;top:-44px;width:118px;height:118px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;text-align:center;font:700 .8rem/1.15 var(--font-body);text-transform:uppercase;padding:14px;transform:rotate(10deg);box-shadow:0 10px 24px rgba(0,0,0,.3);margin:0;z-index:2}
+@media (max-width:640px){.e3-strip{grid-auto-columns:62vw;scroll-snap-type:x mandatory;padding-top:14px}.e3-ticket{scroll-snap-align:start}.e3-sticker{right:14px;top:0;width:88px;height:88px;font-size:.64rem;padding:10px}}
+/* lousa */
+.e3-menu{padding:130px 0 70px;background:var(--bg)}
+.e3-board{background:var(--board);color:var(--chalk);border:14px solid var(--wood);border-radius:6px;box-shadow:inset 0 0 80px rgba(0,0,0,.45),0 24px 50px rgba(0,0,0,.2);padding:36px 22px 30px;position:relative;
+  background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:6px 6px}
+@media (min-width:860px){.e3-board{padding:48px 56px 40px}}
+.e3-board-head{max-width:640px}
+.e3-chalk-kicker{font:600 1.5rem/1 'Caveat',cursive;color:#f6d36b;display:flex;gap:.6em;align-items:center;flex-wrap:wrap;margin:0 0 .3em}
+.e3-board h2{font-size:clamp(2.6rem,6vw,4.4rem);color:var(--chalk);margin:0 0 .2em}
+.e3-board-head p{color:rgba(244,241,234,.78)}
+.e3-postit{background:#fff3a8;color:#3d3500;border:0;border-radius:2px;transform:rotate(-1deg);max-width:560px;box-shadow:0 8px 18px rgba(0,0,0,.35);margin:20px 0 30px}
+.e3-board-top{display:grid;gap:0 40px;align-items:start}
+@media (min-width:1000px){.e3-board-top{grid-template-columns:1fr 340px;margin-bottom:34px}.e3-postit{transform:rotate(3deg);margin:0}}
+.e3-cols{display:grid;gap:26px 48px;grid-template-columns:1fr}
+@media (min-width:700px){.e3-cols{grid-template-columns:repeat(2,1fr)}}
+.e3-col h3{font:700 2rem/1 'Caveat',cursive;text-transform:none;color:#f6d36b;border-bottom:2px dashed rgba(244,241,234,.3);padding-bottom:.25em;display:flex;align-items:center;gap:.5em;flex-wrap:wrap}
+.e3-col h3 .sim-tag{font-family:var(--font-body);color:var(--chalk)}
+.e3-col ul{list-style:none}
+.e3-col li{font:500 1.45rem/1.25 'Caveat',cursive;padding:5px 0 5px 26px;position:relative}
+.e3-col li::before{content:"✱";position:absolute;left:0;color:var(--brand);font-size:1rem;top:.55em}
+.e3-dish{display:block}.e3-dish-desc{display:block;font:400 .88rem/1.4 var(--font-body);color:rgba(244,241,234,.72);margin-top:2px}
+.e3-dish-price{font-family:var(--font-body);font-size:.95rem;margin-left:.6em;color:#f6d36b}
+.e3-board-cta{margin-top:28px}
+/* tíquetes de pedido */
+.e3-dest{padding:70px 0;background:var(--bg)}
+.e3-dest h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:28px}
+.e3-orders{list-style:none;display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:640px){.e3-orders{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1040px){.e3-orders{grid-template-columns:repeat(4,1fr)}}
+.e3-order{background:#fff;padding:24px 20px 22px;position:relative;border-top:6px solid var(--brand);
+  -webkit-mask:radial-gradient(circle 9px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat;
+  mask:radial-gradient(circle 9px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat}
+.e3-order-n{font:400 2.2rem/1 var(--font-display);color:var(--brand)}
+.e3-order h3{font-size:1.5rem;margin:.3em 0}
+.e3-order p{color:var(--muted);margin:0;font-size:.95rem}
+/* sobre */
+.e3-sobre{padding:70px 0;background:#fff}
+.e3-sobre-grid{display:grid;gap:26px}
+@media (min-width:900px){.e3-sobre-grid{grid-template-columns:1fr 1.3fr;gap:64px;align-items:center}}
+.e3-hand{font:700 clamp(2.4rem,5vw,3.8rem)/1.05 'Caveat',cursive;color:var(--brand);margin:0;transform:rotate(-2deg)}
+.e3-sobre h2{font-size:clamp(2rem,4vw,3rem)}
+/* comanda */
+.e3-entrega{padding:80px 0;background:var(--bg)}
+.e3-entrega-grid{display:grid;gap:36px}
+@media (min-width:900px){.e3-entrega-grid{grid-template-columns:1fr 1fr;gap:64px;align-items:start}}
+.e3-entrega h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+.e3-entrega .order-links{margin-top:18px}
+.e3-receipt{background:#fff;padding:30px 26px 40px;font-family:'Courier Prime','Courier New',monospace;box-shadow:0 14px 30px rgba(0,0,0,.1);position:relative;
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/18px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/18px 100%}
+.e3-receipt-title{text-transform:uppercase;letter-spacing:.14em;font-weight:700;text-align:center;border-bottom:2px dashed var(--line);padding-bottom:12px}
+.e3-receipt-lines{list-style:none;margin:10px 0}
+.e3-receipt-lines li{display:grid;grid-template-columns:28px 1fr;gap:8px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.e3-r-n{font-weight:700;color:var(--brand)}
+.e3-receipt-kv div{padding:10px 0;border-bottom:1px dashed var(--line)}
+.e3-receipt-kv dt{font-weight:700;text-transform:uppercase;font-size:.8rem}.e3-receipt-kv dd{margin:0}
+.e3-stamp{display:inline-block;margin:20px 0 0;padding:.4em .8em;border:3px solid var(--brand);color:var(--brand);font-weight:700;text-transform:uppercase;transform:rotate(-4deg);letter-spacing:.06em}
+/* contato com placa de rua */
+.e3-contact{padding:80px 0;background:#fff}
+.e3-contact h2{font-size:clamp(2.2rem,5vw,3.6rem)}
+.e3-contact-grid{display:grid;gap:18px;margin-top:22px}
+@media (min-width:900px){.e3-contact-grid{grid-template-columns:1.3fr 1fr 1fr}}
+.e3-plate .ct-card{background:#174a8b;color:#fff;border:4px solid #fff;outline:3px solid #174a8b;border-radius:10px;padding:26px}
+.e3-plate .ct-card h3{text-transform:uppercase;font-family:var(--font-body);font-size:.8rem;letter-spacing:.2em;opacity:.85}
+.e3-plate .ct-card p{font:400 1.2rem/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.02em}
+.e3-plate .text-link{color:#fff}
+/* avaliação */
+.e3-review{background:var(--brand-ink);color:#fff;padding:72px 0}
+.e3-review-inner{display:grid;gap:22px}
+@media (min-width:900px){.e3-review-inner{grid-template-columns:1fr 1fr;gap:64px;align-items:center}}
+.e3-review h2{font-size:clamp(2.2rem,5vw,3.6rem);margin:0}
+.e3-review p{color:rgba(255,255,255,.8)}
+/* CTA */
+.e3-cta{position:relative;padding:110px 0;color:#fff;overflow:hidden}
+.e3-cta .amb::after{background:rgba(0,0,0,.66)}
+.e3-cta-inner{position:relative;z-index:1}
+.e3-cta h2{font-size:clamp(2.6rem,7vw,5.6rem);line-height:.95;max-width:14ch}
+.e3-cta p{max-width:40em}
+.e3-cta .btn-ghost{color:#fff}
+.e3-footer .brand-logo{background:#000;border:2px solid #fff}
+@media (max-width:600px){.wa-float{border-radius:6px}}
+@media (min-width:641px){.e3-strip{overflow:visible}}
+@media (max-width:640px){.e3-chips{flex-direction:column}.e3-chips li{padding:8px 0;font-size:.78rem}.e3-chips li::before,.e3-chips li+li::before{content:"✕";color:var(--brand);margin-right:10px;font-size:.65rem}}
